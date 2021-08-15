@@ -5,11 +5,13 @@ import { PhotoService } from '../services/photo.service';
   templateUrl: 'tab2.page.html',
   styleUrls: ['tab2.page.scss']
 })
+
 export class Tab2Page {
 
-constructor(public photoService: PhotoService) { }
+  constructor(public photoService: PhotoService) { }
+
   addPhotoToGallery() {
     this.photoService.addNewToGallery();
   }
-  
+
 }
